@@ -1,0 +1,4 @@
+*** Settings ***
+Library           AppiumLibrary    20
+
+*** Test Cases ***

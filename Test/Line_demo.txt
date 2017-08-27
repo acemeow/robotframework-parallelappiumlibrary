@@ -1,0 +1,122 @@
+*** Settings ***
+Library           AppiumLibrary    20
+Library           pabot.PabotLib
+Library           ../ParalleAppium/ParalleAppiumLib.py
+Library           ../parallelization/Parallelization.py
+
+*** Variables ***
+${HQ51FYL18100}    ${EMPTY}
+${EP7337JFDK}     ${EMPTY}
+
+*** Test Cases ***
+exampleTest
+    Log    Test Started
+    Comment    ${HQ51FYL18100}=    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100
+    ...    udid=HQ51FYL18100    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Comment    ${EP7337JFDK}    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK
+    ...    udid=EP7337JFDK    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Comment    setServerCount    2
+    Comment    addServer    0    HQ51FYL18100    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
+    Comment    addServer    1    EP7337JFDK    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
+    Comment    startServer    HQ51FYL18100    4020    4021    4022
+    Comment    startServer    EP7337JFDK    4023    4024    4025
+    Comment    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK    udid=EP7337JFDK
+    ...    automationName=appium    appPackage=com.netease.qa.orangedemo    appActivity=MainActivity
+    ${thread1}    Run Async    Start_HQ51FYL18100
+    ${thread2}    Run Async    Start_EP7337JFDK
+    Comment    Wait Until    ${thread1}    ${thread2}
+    sleep    60s
+    Comment    ${openApp1}    Run Async
+    Comment    ${openApp2}    Run Async
+
+multi_through_code
+    [Documentation]    Comment Open Application http://localhost:4020/wd/hub platformName=Android platformVersion=4.4.2 deviceName=HQ51FYL18100 udid=HQ51FYL18100 automationName=appium appPackage=com.remaller.android.wifitalkie_lite appActivity=com.remaller.talkie.core.CoreActivity
+    ...    Comment Open Application http://localhost:4023/wd/hub platformName=Android platformVersion=4.3 deviceName=EP7337JFDK udid=EP7337JFDK automationName=appium appPackage=com.remaller.android.wifitalkie_lite appActivity=com.remaller.talkie.core.CoreActivity
+    setServerCount    2
+    addInstance    HQ51FYL18100    4020    4021    Android    4.4.2    com.remaller.android.wifitalkie_lite
+    ...    com.remaller.talkie.core.CoreActivity
+    addInstance    EP7337JFDK    4023    4024    Android    4.3    com.remaller.android.wifitalkie_lite
+    ...    com.remaller.talkie.core.CoreActivity
+    startServers
+    log    server started
+    sleep    15s
+    ${thread1}    Run Async    PA_HQ51FYL18100
+    ${thread2}    Run Async    PA_EP7337JFDK
+    Wait Until    ${thread1}    ${thread2}
+
+*** Keywords ***
+Start_HQ51FYL18100
+    log    HQ51FYL18100 building
+    startServer    HQ51FYL18100    4020    4021    4022
+    sleep    5s
+    Comment    ${HQ51FYL18100}=    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100
+    ...    udid=HQ51FYL18100    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100    udid=HQ51FYL18100    automationName=appium
+    ...    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    sleep    10s
+    Comment    Switch Application    ${HQ51FYL18100}
+    Comment    Wait Until Page Contains    C6802
+    Comment    Click Text    C6802
+    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    Click Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    Comment    Click Text    Open chat
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Click Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/messageEditText
+    Input Text    id=com.remaller.android.wifitalkie_lite:id/messageEditText    hi
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    Click Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+
+Start_EP7337JFDK
+    log    EP7337JFDK building
+    startServer    EP7337JFDK    4023    4024    4025
+    sleep    5s
+    Comment    ${EP7337JFDK}    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK
+    ...    udid=EP7337JFDK    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK    udid=EP7337JFDK    automationName=appium
+    ...    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    sleep    10s
+    Comment    Switch Application    ${EP7337JFDK}
+    Comment    Wait Until Page Contains    HTC_D526h
+    Comment    Click Text    HTC_D526h
+    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    Click Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    Comment    Click Text    Open chat
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Click Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/messageEditText
+    Input Text    id=com.remaller.android.wifitalkie_lite:id/messageEditText    Hello
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    Click Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+
+PA_HQ51FYL18100
+    Comment    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    sleep    5s
+    PA_click_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    sleep    3s
+    PA_click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/button_messages
+    sleep    10s
+    Comment    PA_wait_until_page_contains_id    0    com.remaller.android.wifitalkie_lite:id/declineButton    10
+    PA_click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/declineButton
+    stopAppiumServers
+
+PA_EP7337JFDK
+    Comment    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    sleep    5s
+    PA_click_element_by_xpath    1    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    sleep    3s
+    PA_click_element_by_id    1    com.remaller.android.wifitalkie_lite:id/button_files
+    sleep    3s
+    PA_click_element_by_xpath    1    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[2]
+    sleep    1s
+    PA_click_element_by_id    1    com.remaller.android.wifitalkie_lite:id/itemCheckBox
+    sleep    1s
+    PA_click_element_by_id    1    com.remaller.android.wifitalkie_lite:id/bottomBarDoneButton
+    sleep    3s
+    stopAppiumServers

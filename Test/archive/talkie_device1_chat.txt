@@ -1,0 +1,20 @@
+*** Settings ***
+Suite Setup       startServer    HQ51FYL18100    4020    4021    4022
+Library           AppiumLibrary    20
+Library           ../../ParalleAppium/ParalleAppiumLib.py
+
+*** Test Cases ***
+talkie device1 chat
+    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100    udid=HQ51FYL18100    automationName=appium
+    ...    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    sleep    5s
+
+startServer
+    Log    Test Started
+    Comment    setServerCount    2
+    Comment    addServer    0    HQ51FYL18100    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
+    Comment    addServer    1    EP7337JFDK    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
+    Comment    startServer    HQ51FYL18100    4020    4021    4022
+    Comment    startServer    EP7337JFDK    4023    4024    4025
+    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=HQ51FYL18100    udid=HQ51FYL18100    automationName=appium
+    ...    appPackage=com.netease.qa.orangedemo    appActivity=MainActivity

@@ -1,0 +1,55 @@
+*** Settings ***
+Library           AppiumLibrary    20
+
+*** Test Cases ***
+
+*** Keywords ***
+Start_HQ51FYL18100
+    log    HQ51FYL18100 building
+    startServer    HQ51FYL18100    4020    4021    4022
+    sleep    5s
+    Comment    ${HQ51FYL18100}=    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100
+    ...    udid=HQ51FYL18100    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100    udid=HQ51FYL18100    automationName=appium
+    ...    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    sleep    10s
+    Comment    Switch Application    ${HQ51FYL18100}
+    Comment    Wait Until Page Contains    C6802
+    Comment    Click Text    C6802
+    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    Click Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[3]
+    Comment    Click Text    Open chat
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Click Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/messageEditText
+    Input Text    id=com.remaller.android.wifitalkie_lite:id/messageEditText    hi
+    Comment    Switch Application    ${HQ51FYL18100}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    Click Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+
+Start_EP7337JFDK
+    log    EP7337JFDK building
+    startServer    EP7337JFDK    4023    4024    4025
+    sleep    5s
+    Comment    ${EP7337JFDK}    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK
+    ...    udid=EP7337JFDK    automationName=appium    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    Open Application    http://localhost:4023/wd/hub    platformName=Android    platformVersion=4.3    deviceName=EP7337JFDK    udid=EP7337JFDK    automationName=appium
+    ...    appPackage=com.remaller.android.wifitalkie_lite    appActivity=com.remaller.talkie.core.CoreActivity
+    sleep    10s
+    Comment    Switch Application    ${EP7337JFDK}
+    Comment    Wait Until Page Contains    HTC_D526h
+    Comment    Click Text    HTC_D526h
+    Wait Until Page Contains Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    Click Element    xpath=//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    Comment    Click Text    Open chat
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Click Element    accessibility_id=com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/messageEditText
+    Input Text    id=com.remaller.android.wifitalkie_lite:id/messageEditText    Hello
+    Comment    Switch Application    ${EP7337JFDK}
+    Wait Until Page Contains Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    Click Element    id=com.remaller.android.wifitalkie_lite:id/sendMessageButton

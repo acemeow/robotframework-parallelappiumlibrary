@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec format="ROBOT" type="library" generated="20170625 23:55:56" name="paralleAppiumLib.paralleAppium">
+<version></version>
+<scope>global</scope>
+<namedargs>no</namedargs>
+<doc>Created by ACEMEOW on 2017/5/5.</doc>
+<kw name="Config Servers">
+<arguments>
+<arg>serverNum</arg>
+<arg>deviceName</arg>
+<arg>packageName</arg>
+<arg>activityName</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Set Server Count">
+<arguments>
+<arg>count</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Start Servers">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Stop Appium Servers">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>

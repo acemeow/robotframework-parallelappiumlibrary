@@ -1,0 +1,48 @@
+*** Settings ***
+Documentation     Single thread testing on all keywords
+Suite Setup       keywords_test_setup
+Library           ../robotframework-parallelappiumlibrary/src/ParalleAppiumLib.py
+
+*** Test Cases ***
+finds
+    sleep    3s
+    Comment    find_element_by_accessibility_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    find_element_by_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    find_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]
+    find_element_by_id    0    com.remaller.android.wifitalkie_lite:id/deviceName
+    find_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+
+click_and_taps
+    sleep    3s
+    Comment    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/submitButton
+    click_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    tap_coordinate    0    150    500    500
+    Comment    click_element_by_accessibility_id    0    com.remaller.android.wifitalkie_lite:id/button_messages
+
+text_input
+    sleep    3s
+    input_text_by_id    0    com.remaller.android.wifitalkie_lite:id/messageEditText    hello
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]    123
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
+
+waits
+    Comment    wait_until_page_contains_accessibility_id
+    wait_until_page_contains_id     0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    wait_until_page_contains_xpath     0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]
+
+asserts
+
+*** Keywords ***
+keywords_test_setup
+    setServerCount    1
+    Comment    addInstance    HQ51FYL18100    4020    4021    Android    4.4.2
+    ...    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
+    addInstance    EP7337JFDK    4023    4024    Android    4.3    com.remaller.android.wifitalkie_lite
+    ...    com.remaller.talkie.core.CoreActivity
+    startServers    true
+
+keywords_test_teardown
+    stopAppiumServers
