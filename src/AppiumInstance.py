@@ -8,7 +8,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 import os, re, logging, subprocess, threading, socket, time, sys, thread
-import elementfinder
+import platform
+import signal
 
 class appiumInstance():
     deviceName = ""
@@ -23,6 +24,7 @@ class appiumInstance():
     bootstrapPort = ""
     chromedriverPort = ""
 
+
     def appiumInstance(self, withClient=None):
         # appiumLib = AppiumLibrary
         old_stdout = sys.stdout
@@ -36,12 +38,17 @@ class appiumInstance():
         if not os.path.exists(os.path.dirname('../Test_log/')):
             os.makedirs(os.path.dirname('../Test_log/'))
 
-        args2 = "start /b appium -a {0} -p {1} -bp {2} -U {3}  --no-reset".format(self.IPAddress, self.appiumPort,
+        if(platform.system()=='windows'):
+            args2 = "start /b appium -a {0} -p {1} -bp {2} -U {3}  --no-reset".format(self.IPAddress, self.appiumPort, self.bootstrapPort, self.deviceName)
+        else:
+            args2 = "node /usr/local/lib/node_modules/appium/build/lib/main.js -a {0} -p {1} -bp {2} -U {3}  --no-reset &".format(self.IPAddress, self.appiumPort,
                                                                                   self.bootstrapPort, self.deviceName)
+        global p2
         p2 = subprocess.Popen(args2, stdout=open(log_path, 'a'), stderr=subprocess.PIPE, shell=True)
+
         try:
             p2.wait()
-            time.sleep(5)
+            time.sleep(20)
             print("[ParalleAppium] "u'devices:{} appium server started'.format(self.deviceName))
 
         except:
@@ -55,11 +62,13 @@ class appiumInstance():
             desired_caps['appPackage'] = self.packageName
             desired_caps['appActivity'] = str(self.activityName)
             self.driver = webdriver.Remote("http://127.0.0.1:" + self.appiumPort + "/wd/hub", desired_caps)
-
+            #self.driver = webdriver.Remote("http://localhost:" + self.appiumPort + "/wd/hub", desired_caps)
         sys.stdout = old_stdout
 
     def stopInstance(self):
         self.driver.quit()
+        os.system("killall node")
+
         return
 
     def getFreePort(self):
@@ -147,14 +156,14 @@ class appiumInstance():
 
 
     ########## WAIT #####################################################
-    def _wait_until_page_contains_accessibility_id(self, id, timeout=100, error=None):
-        return WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.ID, id)))
+    def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
 
-    def _wait_until_page_contains_id(self, name, timeout=100, error=None):
-        return WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.NAME, name)))
+    def _wait_until_page_contains_id(self, name, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
 
-    def _wait_until_page_contains_xpath(self, xpath, timeout=100, error=None):
-        return WebDriverWait(self.driver, timeout).until(EC.presence_of_element_located((By.XPATH, xpath)))
+    def _wait_until_page_contains_xpath(self, xpath, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
 
     ########## ASSERTS #####################################################
     def _element_should_be_disabled(self, locator, arg):

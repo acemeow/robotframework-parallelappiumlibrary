@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36483d02-c47f-482e-88ae-ad5c032a5382" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppiumInstance.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/elementfinder.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Test/archive/WhatsApp_MultiThread.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/robotframework-parallelappiumlibrary.iml" afterPath="$PROJECT_DIR$/.idea/robotframework-parallelappiumlibrary.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Keywords_Test.txt" afterPath="$PROJECT_DIR$/Test/Keywords_Test.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Line_demo.txt" afterPath="$PROJECT_DIR$/Test/Line_demo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/WhatsApp_demo.txt" afterPath="$PROJECT_DIR$/Test/WhatsApp_demo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/WifiTalkie_demo.txt" afterPath="$PROJECT_DIR$/Test/WifiTalkie_demo.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/__init__.txt" afterPath="$PROJECT_DIR$/Test/__init__.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppiumInstance.py" afterPath="$PROJECT_DIR$/src/AppiumInstance.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ParalleAppiumLib.py" afterPath="$PROJECT_DIR$/src/ParalleAppiumLib.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,36 +21,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ParalleAppiumLib.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ParalleAppiumLib.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Keywords_Test.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/Keywords_Test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="237">
+              <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppiumInstance.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppiumInstance.py">
+      <file leaf-file-name="Keywords_Test_ios.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test/Keywords_Test_ios.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="118" column="39" lean-forward="false" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="424">
+              <caret line="41" column="92" lean-forward="false" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="elementfinder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/elementfinder.py">
+      <file leaf-file-name="ParalleAppiumLib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ParalleAppiumLib.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-266">
-              <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+            <state relative-caret-position="885">
+              <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppiumInstance.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppiumInstance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -63,6 +76,14 @@
     <findStrings>
       <find>wait_until_page_contains_id</find>
       <find>+</find>
+      <find>started</find>
+      <find>keywords_test_setup</find>
+      <find>_input_text_by_id</find>
+      <find>EC</find>
+      <find>[ParalleAppium]</find>
+      <find>k</find>
+      <find>stopAppiumServers</find>
+      <find>ParalleAppium</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,15 +93,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/elementfinder.py" />
+        <option value="$PROJECT_DIR$/Test/archive/WhatsApp_MultiThread.txt" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_47_06 appium.log" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 05_06_39 appium.log" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_00_16 appium.log" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_31_06 appium.log" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_34_52 appium.log" />
+        <option value="$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 18_00_43 appium.log" />
         <option value="$PROJECT_DIR$/src/ParalleAppiumLib.py" />
         <option value="$PROJECT_DIR$/src/AppiumInstance.py" />
+        <option value="$PROJECT_DIR$/Test/Keywords_Test.txt" />
+        <option value="$PROJECT_DIR$/Test/Keywords_Test_ios.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1273" />
-    <option name="width" value="1294" />
-    <option name="height" value="1447" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="709" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -98,42 +128,37 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robotframework-parallelappiumlibrary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robotframework-parallelappiumlibrary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robotframework-parallelappiumlibrary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="robotframework-parallelappiumlibrary" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="robotframework-parallelappiumlibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robotframework-parallelappiumlibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robotframework-parallelappiumlibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robotframework-parallelappiumlibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="robotframework-parallelappiumlibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="robotframework-parallelappiumlibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="Test_log" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../robotframework-appiumlibrary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="C:\Users\ACEMEOW\Documents\robotframework-parallelappiumlibrary\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -152,7 +177,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.ParalleAppiumLib">
+    <configuration name="ParalleAppiumLib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="robotframework-parallelappiumlibrary" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ParalleAppiumLib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -218,6 +260,11 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.ParalleAppiumLib" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -236,25 +283,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1294" height="1447" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23787168" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.75868726" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3987441" sideWeight="0.24131274" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -262,57 +309,118 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/elementfinder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/applicationcache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/applicationcache.py" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/elementfinder.py" />
+    <entry file="file://$PROJECT_DIR$/Test/archive/WhatsApp_MultiThread.txt" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 21_43_39 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 21_45_30 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 21_45_47 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 21_59_54 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 22_06_41 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 22_16_43 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 22_31_44 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_03 22_30_28 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_00_50 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 03_51_42 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_07_27 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_42_27 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_47_06 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 04_58_47 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 05_00_05 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 05_06_39 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test/WhatsApp_demo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/WifiTalkie_demo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_15_49 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_00_16 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_31_06 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 08_34_05 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_04 05_25_36 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_34_52 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_55_02 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_54_42 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 18_00_43 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 18_00_21 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 18_00_01 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_07 17_59_41 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_08 22_11_48 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_12 23_36_22 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_12 23_36_14 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_12 23_32_45 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 01_09_27 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test/Line_demo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 01_18_10 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 01_26_25 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 01_23_03 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 06_02_36 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 06_05_52 appium.log" />
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_09_13 06_09_18 appium.log" />
+    <entry file="file://$PROJECT_DIR$/src/AppiumInstance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/elementfinder.py">
+    <entry file="file://$PROJECT_DIR$/Test_log/EP7337JFDK_2017_10_11 10_31_39 appium.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ParalleAppiumLib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="885">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppiumInstance.py">
+    <entry file="file://$PROJECT_DIR$/Test/Keywords_Test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="118" column="39" lean-forward="false" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="237">
+          <caret line="29" column="47" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/Keywords_Test_ios.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="41" column="92" lean-forward="false" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>

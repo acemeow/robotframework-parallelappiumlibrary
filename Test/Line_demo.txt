@@ -1,8 +1,5 @@
 *** Settings ***
-Library           AppiumLibrary    20
-Library           pabot.PabotLib
-Library           ../ParalleAppium/ParalleAppiumLib.py
-Library           ../parallelization/Parallelization.py
+Library           ../src/ParalleAppiumLib.py
 
 *** Variables ***
 ${HQ51FYL18100}    ${EMPTY}

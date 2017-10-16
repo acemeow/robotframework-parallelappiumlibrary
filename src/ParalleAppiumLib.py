@@ -55,9 +55,9 @@ class ParalleAppiumLib():
         return
 
     def stopAppiumServers(self):
-        for x in self.serverList:
-            self.serverList[x].stopAppiumServers()
-            self.threadList[x].join()
+        for k in range(int(self.serverCount)):
+            self.serverList[k].stopInstance()
+            self.threadList[k].join()
 
     def setServerCount(self, count):
         self.serverCount = int(count)
@@ -104,3 +104,4 @@ class ParalleAppiumLib():
     def wait_until_page_contains_xpath(self, num, xpath, timeout=10):
         self.serverList[int(num)]._wait_until_page_contains_xpath(xpath, timeout)
 
+# ios_webkit_debug_proxy -c 607dd2124bfe2b5f95929539bf41e68265009de7:27753 -d

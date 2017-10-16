@@ -1,7 +1,6 @@
 *** Settings ***
 Library           runKeywordAsync
-Library           ../parallelization/Parallelization.py
-Library           ../robotframework-parallelappiumlibrary/src/ParalleAppiumLib.py
+Library           ../src/ParalleAppiumLib.py
 
 *** Variables ***
 ${HQ51FYL18100}    Open Application    http://localhost:4020/wd/hub    platformName=Android    platformVersion=4.4.2    deviceName=HQ51FYL18100    udid=HQ51FYL18100    automationName=appium
