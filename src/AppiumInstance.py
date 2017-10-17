@@ -12,10 +12,11 @@ import platform
 import signal
 
 class appiumInstance():
-    deviceName = ""
-    packageName = ""
-    activityName = ""
-    platformName = ""
+    deviceName = None
+    packageName = None
+    activityName = None
+    platformName = None
+    browserName = None
     IPAddress = "127.0.0.1"
     appiumServiceUrl = ""
     platformVersion = ""
@@ -59,8 +60,12 @@ class appiumInstance():
             desired_caps['platformName'] = self.platformName
             desired_caps['platformVersion'] = self.platformVersion
             desired_caps['deviceName'] = self.deviceName
-            desired_caps['appPackage'] = self.packageName
-            desired_caps['appActivity'] = str(self.activityName)
+            if(self.browserName!=None):
+                desired_caps['browserName'] = self.browserName
+            if(self.packageName != None):
+                desired_caps['appPackage'] = self.packageName
+            if(self.activityName != None):
+                desired_caps['appActivity'] = str(self.activityName)
             self.driver = webdriver.Remote("http://127.0.0.1:" + self.appiumPort + "/wd/hub", desired_caps)
             #self.driver = webdriver.Remote("http://localhost:" + self.appiumPort + "/wd/hub", desired_caps)
         sys.stdout = old_stdout
@@ -86,6 +91,10 @@ class appiumInstance():
 
     def setAppActivity(self, activityname):
         self.activityName = activityname
+        return
+
+    def setBrowserName(self, browserName):
+        self.browserName = browserName
         return
 
     def setPort(self, port):
@@ -115,7 +124,12 @@ class appiumInstance():
 
     def _find_element_by_xpath(self, xpath):
         self.driver.find_element_by_xpath(xpath)
-        # self.driver.find_element_by_class_name()
+
+    def _find_element_by_class_name(self, className):
+        self.driver.find_element_by_class_name(className)
+
+    def _find_element_by_name(self, name):
+        self.driver.find_element_by_name(name)
         # self.driver.find_element_by_link_text()
         # self.driver.find_element_by_tag_name()
         # self.driver.scroll()
@@ -130,6 +144,12 @@ class appiumInstance():
 
     def _click_element_by_xpath(self, xpath):
         self.driver.find_element_by_xpath(xpath).click()
+
+    def _click_element_by_class_name(self, className):
+        self.driver.find_element_by_class_name(className)
+
+    def _click_element_by_name(self, name):
+        self.driver.find_element_by_name(name)
 
     def _tap_coordinate(self, x, y, duration):
         self.driver.tap([x, y], duration)
@@ -154,7 +174,17 @@ class appiumInstance():
         except Exception as e:
             raise e
 
+    def _input_text_by_class_name(self, className, texts):
+        try:
+            self.driver.find_element_by_class_name(className).send_keys(texts)
+        except Exception as e:
+            raise e
 
+    def _input_text_by_name(self, name, texts):
+        try:
+            self.driver.find_element_by_name(name).send_keys(texts)
+        except Exception as e:
+            raise e
     ########## WAIT #####################################################
     def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
@@ -164,6 +194,15 @@ class appiumInstance():
 
     def _wait_until_page_contains_xpath(self, xpath, timeout=20, error=None):
         WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
+
+    def _wait_until_page_contains_class_name(self, className, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, className)))
+
+    def _wait_until_page_contains_name(self, name, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
+
+    def _goToURL(self, URL):
+        self.driver.get(URL)
 
     ########## ASSERTS #####################################################
     def _element_should_be_disabled(self, locator, arg):
