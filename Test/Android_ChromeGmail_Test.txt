@@ -27,12 +27,18 @@ login
     goToURL    0    https://www.google.com/gmail/
     sleep    3s
     comment    input_text_by_xpath    0    //android.webkit.WebView[@content-desc="Gmail"]/android.view.View[1]/android.view.View[3]/android.view.View/android.view.View/android.widget.EditText    acetesting.a
-    input_text_by_name    0    電子郵件地址或電話號碼    acetesting.a
+    comment    input_text_by_name    0    電子郵件地址或電話號碼    acetesting.a
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]//*[2]//*[1]//*[1]//*[3]    acetesting.a
     click_element_by_xpath    0    //android.widget.Button[@content-desc="繼續"]
-    input_text_by_class_name    0    android.widget.EditText    acetest0000
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]//*[2]//*[1]//*[1]//*[3]    acetest0000
+    comment    input_text_by_class_name    0    android.widget.EditText    acetest0000
     click_element_by_xpath    0    //android.widget.Button[@content-desc="繼續"]
-
-    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    comment    click_element_by_xpath    0    //android.widget.Button[@content-desc="Compose"]
+    click_element_by_accessibility_id    0    Compose
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]//*[2]//*[1]//*[1]//*[4]//*[2]//*[1]//*[1]//*[3]//*[1]//*[1]    acetesting.b@gmail.com
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]//*[2]//*[1]//*[1]//*[4]//*[2]//*[1]//*[3]//*[2]    testmail
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]//*[2]//*[1]//*[1]//*[4]//*[2]//*[1]//*[4]//*[1]    hello
+    click_element_by_accessibility_id    0    Send
 
 waits
     Comment    wait_until_page_contains_accessibility_id
