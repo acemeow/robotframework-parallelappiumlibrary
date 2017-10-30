@@ -17,7 +17,12 @@ class appiumInstance():
     activityName = None
     platformName = None
     browserName = None
+    #for iOS
     bundleId = None
+    xcodeOrgId = None
+    xcodeSigningId = None
+
+
     IPAddress = "127.0.0.1"
     appiumServiceUrl = ""
     platformVersion = ""
@@ -115,6 +120,12 @@ class appiumInstance():
 
     def setBundleId(self, bundleID):
         self.bundleId = bundleID
+
+    def setXcodeOrgId(self, xcodeOrgID):
+        self.xcodeOrgId = xcodeOrgID
+
+    def setXcodeSigningId(self, xcodeSigningID):
+        self.xcodeSigningId = xcodeSigningID
 
     def stopAppiumServers(self):
         self.driver.quit()

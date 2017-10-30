@@ -31,7 +31,7 @@ keywords_test_setup
     setServerCount    1
     Comment    addInstance    HQ51FYL18100    4020    4021    Android    4.4.2
     ...    com.remaller.android.wifitalkie_lite    com.remaller.talkie.core.CoreActivity
-    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    safari    fkapple.com
+    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    safari    fkapple.com    
     startServers    true
 
 keywords_test_teardown
