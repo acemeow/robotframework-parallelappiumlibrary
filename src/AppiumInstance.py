@@ -1,10 +1,10 @@
 import unittest
-from appium import webdriver
+#from appium import webdriver
 from subprocess import call
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+#from selenium.webdriver.common.by import By
+#from selenium.webdriver.support.ui import WebDriverWait
+#from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 import os, re, logging, subprocess, threading, socket, time, sys, thread
@@ -17,6 +17,7 @@ class appiumInstance():
     activityName = None
     platformName = None
     browserName = None
+    bundleId = None
     IPAddress = "127.0.0.1"
     appiumServiceUrl = ""
     platformVersion = ""
@@ -62,6 +63,8 @@ class appiumInstance():
             desired_caps['deviceName'] = self.deviceName
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
+            if(self.bundleId!=None):
+                desired_caps['bundleId'] = self.bundleId
             if(self.packageName != None):
                 desired_caps['appPackage'] = self.packageName
             if(self.activityName != None):
@@ -109,6 +112,9 @@ class appiumInstance():
 
     def setVersion(self, ver):
         self.platformVersion = ver
+
+    def setBundleId(self, bundleID):
+        self.bundleId = bundleID
 
     def stopAppiumServers(self):
         self.driver.quit()
@@ -185,21 +191,21 @@ class appiumInstance():
             self.driver.find_element_by_name(name).send_keys(texts)
         except Exception as e:
             raise e
-    ########## WAIT #####################################################
-    def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
-
-    def _wait_until_page_contains_id(self, name, timeout=20, error=None):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
-
-    def _wait_until_page_contains_xpath(self, xpath, timeout=20, error=None):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
-
-    def _wait_until_page_contains_class_name(self, className, timeout=20, error=None):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, className)))
-
-    def _wait_until_page_contains_name(self, name, timeout=20, error=None):
-        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
+    # ########## WAIT #####################################################
+    # def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
+    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
+    #
+    # def _wait_until_page_contains_id(self, name, timeout=20, error=None):
+    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
+    #
+    # def _wait_until_page_contains_xpath(self, xpath, timeout=20, error=None):
+    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
+    #
+    # def _wait_until_page_contains_class_name(self, className, timeout=20, error=None):
+    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, className)))
+    #
+    # def _wait_until_page_contains_name(self, name, timeout=20, error=None):
+    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
 
     def _goToURL(self, URL):
         self.driver.get(URL)

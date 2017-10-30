@@ -1,14 +1,4 @@
-import unittest
-from appium import webdriver
-from subprocess import call
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
-from selenium.webdriver.support.wait import WebDriverWait
 import os, re, logging, subprocess, threading, socket, time, sys, thread
-# import elementfinder
 import AppiumInstance
 
 
@@ -23,7 +13,7 @@ class ParalleAppiumLib():
     # 2 addServer (serverNum, deviceName, packageName, activityName) **each server a tine
     # 3 startServers
 
-    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName=None, packageName=None,
+    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName=None, bundleID=None,  packageName=None,
                     activityName=None):
         x = AppiumInstance.appiumInstance()
         x.setDeviceName(deviceName)
@@ -34,6 +24,7 @@ class ParalleAppiumLib():
         x.setBrowserName(browserName)
         x.setPlatform(platformName)
         x.setVersion(platformVersion)
+        x.setBundleId(browserName)
         self.serverList.append(x)
         self.threadList.append(None)
         return
@@ -105,7 +96,7 @@ class ParalleAppiumLib():
     def click_element_by_class_name(self, num, className):
         self.serverList[int(num)]._click_element_by_class_name(className)
 
-    def _click_element_by_name(self, num, name):
+    def click_element_by_name(self, num, name):
         self.serverList[int(num)]._click_element_by_name(name)
 
     def tap_coordinate(self, num, x, y, duration):
