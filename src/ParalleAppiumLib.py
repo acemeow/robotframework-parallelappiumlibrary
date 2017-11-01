@@ -13,7 +13,7 @@ class ParalleAppiumLib():
     # 2 addServer (serverNum, deviceName, packageName, activityName) **each server a tine
     # 3 startServers
 
-    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName=None, bundleID=None, xcodeOrgId=None, xcodeSigningId=None, packageName=None,
+    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName=None, xcodeOrgId=None, bundleID=None, packageName=None,
                     activityName=None):
         x = AppiumInstance.appiumInstance()
         x.setDeviceName(deviceName)
@@ -24,24 +24,12 @@ class ParalleAppiumLib():
         x.setBrowserName(browserName)
         x.setPlatform(platformName)
         x.setVersion(platformVersion)
-        x.setBundleId(browserName)
+        x.setBundleId(bundleID)
         x.setXcodeOrgId(xcodeOrgId)
-        x.setXcodeSigningId(xcodeSigningId)
+        x.setXcodeSigningId("iPhone developer")
         self.serverList.append(x)
         self.threadList.append(None)
         return
-
-    # def addBrowserInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName):
-    #     x = AppiumInstance.appiumInstance()
-    #     x.setDeviceName(deviceName)
-    #     x.setPort(appiumPort)
-    #     x.setBoostrapPort(bootstrapPort)
-    #     x.setBrowserName(browserName)
-    #     x.setPlatform(platformName)
-    #     x.setVersion(platformVersion)
-    #     self.serverList.append(x)
-    #     self.threadList.append(None)
-    #     return
 
     def startServers(self, withClient=False):
         self.serverList, self.serverCount

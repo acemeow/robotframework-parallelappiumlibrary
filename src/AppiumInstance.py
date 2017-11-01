@@ -20,7 +20,7 @@ class appiumInstance():
     #for iOS
     bundleId = None
     xcodeOrgId = None
-    xcodeSigningId = None
+    xcodeSigningId = "iPhone developer"
 
 
     IPAddress = "127.0.0.1"
@@ -74,6 +74,10 @@ class appiumInstance():
                 desired_caps['appPackage'] = self.packageName
             if(self.activityName != None):
                 desired_caps['appActivity'] = str(self.activityName)
+            if(self.xcodeOrgId != None):
+                desired_caps['xcodeOrgId'] = self.xcodeOrgId
+            if(self.xcodeSigningId != None):
+                desired_caps['xcodeSigningId'] = self.xcodeSigningId
             self.driver = webdriver.Remote("http://127.0.0.1:" + self.appiumPort + "/wd/hub", desired_caps)
             #self.driver = webdriver.Remote("http://localhost:" + self.appiumPort + "/wd/hub", desired_caps)
         sys.stdout = old_stdout

@@ -1,0 +1,2362 @@
+[ParalleAppium] devices:607dd2124bfe2b5f95929539bf41e68265009de7 appium server started
+ 127.0.0.1
+[Appium]   port: 4023
+[Appium]   bootstrapPort: 4024
+[Appium]   udid: 607dd2124bfe2b5f95929539bf41e68265009de7
+[Appium]   noReset: true
+[Appium] Deprecated server args:
+[Appium]   -U,--udid => --default-capabilities '{"udid":"607dd2124bfe2b5f95929539bf41e68265009de7"}'
+[Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+[Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[Appium]   udid: '607dd2124bfe2b5f95929539bf41e68265009de7'
+[Appium]   noReset: true
+[Appium] Appium REST http interface listener started on 127.0.0.1:4023
+[HTTP] --> POST /wd/hub/session {"capabilities":{"alwaysMatch":{"browserName":"safari","platformName":"iOS"},"firstMatch":[{}]},"desiredCapabilities":{"deviceName":"607dd2124bfe2b5f95929539bf41e68265009de7","xcodeOrgId":"SSJ3AAN8C8","browserName":"safari","xcodeSigningId":"iPhone developer","platformVersion":"10.3.3","platformName":"iOS"}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"607dd2124bfe2b5f95929539bf41e68265009de7","xcodeOrgId":"SSJ3AAN8C8","browserName":"safari","xcodeSigningId":"iPhone developer","platformVersion":"10.3.3","platformName":"iOS"},null,{"alwaysMatch":{"browserName":"safari","platformName":"iOS"},"firstMatch":[{}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509559865960 (02:11:05 GMT+0800 (CST))
+[Appium] Requested iOS support with version >= 10, using XCUITest driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[Appium] Creating new XCUITestDriver (v2.49.0) session
+[Appium] Capabilities:
+[Appium]   deviceName: '607dd2124bfe2b5f95929539bf41e68265009de7'
+[Appium]   xcodeOrgId: 'SSJ3AAN8C8'
+[Appium]   browserName: 'safari'
+[Appium]   xcodeSigningId: 'iPhone developer'
+[Appium]   platformVersion: '10.3.3'
+[Appium]   platformName: 'iOS'
+[Appium]   udid: '607dd2124bfe2b5f95929539bf41e68265009de7'
+[Appium]   noReset: true
+[BaseDriver] Session created with session id: ce696cc7-f60b-4573-91ac-f8439b2fe1ab
+[debug] [XCUITest] Xcode version set to '9.0.1' (tools v9.0.1.0.1.1506734476)
+[debug] [XCUITest] iOS SDK Version set to '11.0'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1509559867168 (02:11:07 GMT+0800 (CST))
+[debug] [XCUITest] Available devices: 607dd2124bfe2b5f95929539bf41e68265009de7
+[debug] [XCUITest] Creating iDevice object with udid '607dd2124bfe2b5f95929539bf41e68265009de7'
+[XCUITest] Determining device to run tests on: udid: '607dd2124bfe2b5f95929539bf41e68265009de7', real device: true
+[XCUITest] Safari test requested
+[debug] [BaseDriver] Event 'appConfigured' logged at 1509559868297 (02:11:08 GMT+0800 (CST))
+[debug] [BaseDriver] Event 'resetStarted' logged at 1509559868297 (02:11:08 GMT+0800 (CST))
+[debug] [XCUITest] Reset: fullReset not set. Leaving as is
+[debug] [BaseDriver] Event 'resetComplete' logged at 1509559868298 (02:11:08 GMT+0800 (CST))
+[debug] [iOSLog] Attempting iOS device log capture via libimobiledevice idevicesyslog
+[debug] [iOSLog] Starting iOS device log capture with: 'idevicesyslog'
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1509559868496 (02:11:08 GMT+0800 (CST))
+[XCUITest] Setting up real device
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[debug] [XCUITest] Capability 'useNewWDA' set to false, so trying to reuse currently running WDA instance at 'http://localhost:8100/'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"F8BFB29B-2EF2-4385-99FA-8AC98DB1C63A\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.3\"\n    },\n    \"ios\" : {\n      \"ip\" : \"192.168.0.196\",\n      \"simulatorVersion\" : \"10.3.3\"\n    },\n    \"build\" : {\n      \"time\" : \"Nov  1 2017 18:13:00\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [XCUITest] Detected WDA listening at 'http://localhost:8100/'. Setting WDA endpoint to 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1509559868547 (02:11:08 GMT+0800 (CST))
+[XCUITest] Using provided WebdriverAgent at 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1509559868550 (02:11:08 GMT+0800 (CST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"F8BFB29B-2EF2-4385-99FA-8AC98DB1C63A\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.3\"\n    },\n    \"ios\" : {\n      \"ip\" : \"192.168.0.196\",\n      \"simulatorVersion\" : \"10.3.3\"\n    },\n    \"build\" : {\n      \"time\" : \"Nov  1 2017 18:13:00\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.apple.mobilesafari","arguments":["-u","http://appium.io"],"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"D13CF63A-295E-477B-8C04-D95742442000","value":{"sessionId":"D13CF63A-295E-477B-8C04-D95742442000","capabilities":{"browserName":"Safari","device":"iphone","CFBundleIdentifier":"com.apple.mobilesafari","sdkVersion":"10.3.3"}},"status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1509559874200 (02:11:14 GMT+0800 (CST))
+[debug] [XCUITest] Cannot find a match for DerivedData folder path from lsof. Trying to access logs
+[XCUITest] Setting '555' permissions to '/Users/ACEMEOW/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1509559874355 (02:11:14 GMT+0800 (CST))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1509559874356 (02:11:14 GMT+0800 (CST))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8100/session/D13CF63A-295E-477B-8C04-D95742442000/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"D13CF63A-295E-477B-8C04-D95742442000","value":{},"status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1509559876427 (02:11:16 GMT+0800 (CST))
+[debug] [XCUITest] Waiting for initial webview
+[debug] [iOS] Waiting for 3000 ms before navigating to view.
+[debug] [iOS] Navigating to most recently opened webview
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[iOS] Could not find any webviews yet, refreshing/retrying
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [iOS] Retrieving contexts and views
+[debug] [iOS] Selecting by url: true (expected url: 'http://appium.io')
+[debug] [RemoteDebugger] Getting WebKitRemoteDebugger pageArray: localhost, 27753
+[debug] [RemoteDebugger] Sending request to: http://localhost:27753/json
+[iOS] Attempted to get a list of webview contexts but could not connect to ios-webkit-debug-proxy. If you expect to find webviews, please ensure that the proxy is running and accessible
+[debug] [iOS] No web frames found.
+[debug] [JSONWP Proxy] Proxying [DELETE /session/ce696cc7-f60b-4573-91ac-f8439b2fe1ab] to [DELETE http://localhost:8100/session/D13CF63A-295E-477B-8C04-D95742442000] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"1EC9F9B2-1287-401B-8665-CB0CD37FC699\",\n  \"value\" : {\n\n  },\n  \"status\" : 0\n}"
+[XCUITest] Setting '755' permissions to '/Users/ACEMEOW/Library/Developer/Xcode/DerivedData/WebDriverAgent-dikkwtrisltbeobjmfvpthwwekvs/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [iOSLog] Stopping iOS log capture
+[HTTP] <-- POST /wd/hub/session 500 104868 ms - 183 
