@@ -1,10 +1,10 @@
 import unittest
-#from appium import webdriver
+from appium import webdriver
 from subprocess import call
-from selenium import webdriver
-#from selenium.webdriver.common.by import By
+#from selenium import webdriver
+from selenium.webdriver.common.by import By
 #from selenium.webdriver.support.ui import WebDriverWait
-#from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 import os, re, logging, subprocess, threading, socket, time, sys, thread
@@ -18,7 +18,7 @@ class appiumInstance():
     platformName = None
     browserName = None
     #for iOS
-    bundleId = None
+    bundleId = packageName
     xcodeOrgId = None
     xcodeSigningId = "iPhone developer"
 
@@ -46,10 +46,9 @@ class appiumInstance():
             os.makedirs(os.path.dirname('../Test_log/'))
 
         if(platform.system()=='windows'):
-            args2 = "start /b appium -a {0} -p {1} -bp {2} -U {3}  --no-reset".format(self.IPAddress, self.appiumPort, self.bootstrapPort, self.deviceName)
+            args2 = "start /b appium -a {0} -p {1} -bp {2} -U {3} --no-reset".format(self.IPAddress, self.appiumPort, self.bootstrapPort, self.deviceName)
         else:
-            args2 = "node /usr/local/lib/node_modules/appium/build/lib/main.js -a {0} -p {1} -bp {2} -U {3}  --no-reset &".format(self.IPAddress, self.appiumPort,
-                                                                                  self.bootstrapPort, self.deviceName)
+            args2 = "node /usr/local/lib/node_modules/appium/build/lib/main.js -a {0} -p {1} -bp {2} -U {3} &".format(self.IPAddress, self.appiumPort, self.bootstrapPort, self.deviceName)
         global p2
         p2 = subprocess.Popen(args2, stdout=open(log_path, 'a'), stderr=subprocess.PIPE, shell=True)
 
@@ -62,10 +61,15 @@ class appiumInstance():
             print("[ParalleAppium] " + self.deviceName + " p2 start failed")
             print('')
         if(withClient):
+            self.bundleId = self.packageName
             desired_caps = {}
             desired_caps['platformName'] = self.platformName
             desired_caps['platformVersion'] = self.platformVersion
             desired_caps['deviceName'] = self.deviceName
+            #desired_caps['useNewWDA'] = "true"
+            desired_caps['showXcodeLog'] = "true"
+            desired_caps['resetOnSessionStartOnly'] = "false"
+            desired_caps['newCommandTimeout']= 120
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
             if(self.bundleId!=None):
@@ -76,6 +80,7 @@ class appiumInstance():
                 desired_caps['appActivity'] = str(self.activityName)
             if(self.xcodeOrgId != None):
                 desired_caps['xcodeOrgId'] = self.xcodeOrgId
+                desired_caps['startIWDP'] = "true"
             if(self.xcodeSigningId != None):
                 desired_caps['xcodeSigningId'] = self.xcodeSigningId
             self.driver = webdriver.Remote("http://127.0.0.1:" + self.appiumPort + "/wd/hub", desired_caps)
@@ -175,6 +180,9 @@ class appiumInstance():
     def _tap_coordinate(self, x, y, duration):
         self.driver.tap([x, y], duration)
 
+    def _swipe(self, x1, y1, x2, y2, duration):
+        self.driver.swipe(x1, y1, x2, y2, duration)
+
     ########## TEXT #####################################################
 
     def _input_text_by_accessibility_id(self, accessibility_id, texts):
@@ -206,21 +214,21 @@ class appiumInstance():
             self.driver.find_element_by_name(name).send_keys(texts)
         except Exception as e:
             raise e
-    # ########## WAIT #####################################################
-    # def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
-    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
-    #
-    # def _wait_until_page_contains_id(self, name, timeout=20, error=None):
-    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
-    #
-    # def _wait_until_page_contains_xpath(self, xpath, timeout=20, error=None):
-    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
-    #
-    # def _wait_until_page_contains_class_name(self, className, timeout=20, error=None):
-    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, className)))
-    #
-    # def _wait_until_page_contains_name(self, name, timeout=20, error=None):
-    #     WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
+    ########## WAIT #####################################################
+    def _wait_until_page_contains_accessibility_id(self, id, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.ID, id)))
+
+    def _wait_until_page_contains_id(self, name, timeout=30, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
+
+    def _wait_until_page_contains_xpath(self, xpath, timeout=30, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, xpath)))
+
+    def _wait_until_page_contains_class_name(self, className, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, className)))
+
+    def _wait_until_page_contains_name(self, name, timeout=20, error=None):
+        WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.NAME, name)))
 
     def _goToURL(self, URL):
         self.driver.get(URL)

@@ -13,8 +13,8 @@ class ParalleAppiumLib():
     # 2 addServer (serverNum, deviceName, packageName, activityName) **each server a tine
     # 3 startServers
 
-    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, browserName=None, xcodeOrgId=None, bundleID=None, packageName=None,
-                    activityName=None):
+    def addInstance(self, deviceName, appiumPort, bootstrapPort, platformName, platformVersion, packageName,
+                    activityName, browserName=None, xcodeOrgId=None, bundleID=None):
         x = AppiumInstance.appiumInstance()
         x.setDeviceName(deviceName)
         x.setPort(appiumPort)
@@ -92,6 +92,9 @@ class ParalleAppiumLib():
     def tap_coordinate(self, num, x, y, duration):
         self.serverList[int(num)]._tap_coordinate(x, y, duration)
 
+    def swipe(self, num, x1, y1, x2, y2, duration):
+        self.serverList[int(num)]._swipe(x1, y1, x2, y2, duration)
+
 ##########TEXT
     def input_text_by_id(self, num, id, text):
         self.serverList[int(num)]._input_text_by_id(id, text)
@@ -107,19 +110,19 @@ class ParalleAppiumLib():
 
 ##########WAIT
 
-    def wait_until_page_contains_accessibility_id(self, num, id, timeout=10):
+    def wait_until_page_contains_accessibility_id(self, num, id, timeout=30):
         self.serverList[int(num)]._wait_until_page_contains_accessibility_id(id, timeout)
 
-    def wait_until_page_contains_id(self, num, id, timeout=10):
+    def wait_until_page_contains_id(self, num, id, timeout=30):
         self.serverList[int(num)]._wait_until_page_contains_id(id, timeout)
 
-    def wait_until_page_contains_xpath(self, num, xpath, timeout=10):
+    def wait_until_page_contains_xpath(self, num, xpath, timeout=30):
         self.serverList[int(num)]._wait_until_page_contains_xpath(xpath, timeout)
 
-    def wait_until_page_contains_class_name(self, num, className, timeout=10):
+    def wait_until_page_contains_class_name(self, num, className, timeout=30):
         self.serverList[int(num)]._wait_until_page_contains_class_name(className, timeout)
 
-    def wait_until_page_contains_name(self, num, name, timeout=10):
+    def wait_until_page_contains_name(self, num, name, timeout=30):
         self.serverList[int(num)]._wait_until_page_contains_name(name, timeout)
 
     def goToURL(self, num, URL):
