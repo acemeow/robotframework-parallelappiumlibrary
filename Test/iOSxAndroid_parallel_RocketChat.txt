@@ -7,7 +7,6 @@ Suite Teardown  keywords_test_teardown
 *** Test Cases ***
 
 login
-
     ${thread1}=    Run Keyword Async    iOS_thread
     ${thread2}=    Run Keyword Async    Android_thread
     ${END}=    Wait Async All
@@ -16,38 +15,35 @@ login
 *** Keywords ***
 keywords_test_setup
     setServerCount    2
-    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    Safari    SSJ3AAN8C8
-    addInstance    EP7337JFDK    4025    4026    Android    4.3    chrome
+    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    acetest.chat.rocket.ios    .MainActivity    None    SSJ3AAN8C8
+    addInstance    EP7337JFDK    4025    4026    Android    4.3    chat.rocket.android    .activity.MainActivity
     startServers    true
 
 iOS_thread
     sleep    10s
-    goToURL    0    https://www.google.com/gmail/
-    sleep    5s
-    click_element_by_xpath    0    //*[@id='tltbt']/div[4]/div
-    sleep    5s
-    input_text_by_xpath    0    //*[@id='composeto']    acetesting.b@gmail.com
-    input_text_by_xpath    0    //*[@id='cmcsubj']    testmail
-    input_text_by_xpath    0    //*[@id='cmcbody']    hello
-    click_element_by_xpath    0    //*[@id='cvtbt']/div[4]/div
+    click_element_by_xpath    0    //XCUIElementTypeButton[@name="Go"]
+    sleep    30s
+    input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField    acetesting.a@gmail.com
+    input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField    acetest0000
+    sleep    30s
+    click_element_by_xpath    0    //XCUIElementTypeButton[@name="Go"]
+    sleep    10s
+    input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeToolbar/XCUIElementTypeTextView    hello
+    click_element_by_xpath    0    //XCUIElementTypeButton[@name="Send"]
 
 Android_thread
     sleep    10s
-    goToURL    1    https://www.google.com/gmail/
-    sleep    5s
-    input_text_by_id    1    identifierId    acetesting.b
-    click_element_by_xpath    1    //*[@id='identifierNext']/content/span
-    sleep    5s
-    input_text_by_xpath    1    //*[@id='password']/div[1]/div/div[1]/input   acetest1234
-    sleep    5s
-    click_element_by_xpath    1    //*[@id='passwordNext']/content/span
-    sleep    5s
-    click_element_by_xpath    0    //*[@id='tltbt']/div[4]/div
-    sleep    5s
-    input_text_by_xpath    1    //*[@id='composeto']    acetesting.a@gmail.com
-    input_text_by_xpath    1    //*[@id='cmcsubj']    testmail
-    input_text_by_xpath    1    //*[@id='cmcbody']    Greetings
-    click_element_by_xpath    1    //*[@id='cvtbt']/div[4]/div
+    click_element_by_id    1    chat.rocket.android:id/btn_connect
+    sleep    30s
+    input_text_by_id    1    chat.rocket.android:id/editor_username    acetestingB
+    input_text_by_id    1    chat.rocket.android:id/editor_passwd    acetest1234
+    click_element_by_id    1    chat.rocket.android:id/btn_login_with_email
+    sleep    10s
+    click_element_by_id    1    chat.rocket.android:id/drawee_avatar
+    click_element_by_id    1    chat.rocket.android:id/userStatus
+    sleep    10s
+    input_text_by_id    1    chat.rocket.android:id/editor    hi
+    click_element_by_id    1    chat.rocket.android:id/button_send
 
 keywords_test_teardown
     stopAppiumServers

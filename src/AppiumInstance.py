@@ -69,7 +69,7 @@ class appiumInstance():
             #desired_caps['useNewWDA'] = "true"
             desired_caps['showXcodeLog'] = "true"
             desired_caps['resetOnSessionStartOnly'] = "false"
-            desired_caps['newCommandTimeout']= 120
+            desired_caps['newCommandTimeout']= 60
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
             if(self.bundleId!=None):
