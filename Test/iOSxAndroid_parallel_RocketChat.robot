@@ -15,17 +15,18 @@ login
 *** Keywords ***
 keywords_test_setup
     setServerCount    2
-    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    acetest.chat.rocket.ios    .MainActivity    None    SSJ3AAN8C8
-    addInstance    EP7337JFDK    4025    4026    Android    4.3    chat.rocket.android    .activity.MainActivity
+    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4020    4021    iOS    10.3.3    acetest.chat.rocket.ios    .MainActivity    None    SSJ3AAN8C8
+    addInstance    EP7337JFDK    4030    4031    Android    4.3    chat.rocket.android    .activity.MainActivity
     startServers    true
 
 iOS_thread
     sleep    10s
     click_element_by_xpath    0    //XCUIElementTypeButton[@name="Go"]
-    sleep    30s
+    sleep    20s
     input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeTextField    acetesting.a@gmail.com
+    sleep    5s
     input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeSecureTextField    acetest0000
-    sleep    30s
+    sleep    20s
     click_element_by_xpath    0    //XCUIElementTypeButton[@name="Go"]
     sleep    10s
     input_text_by_xpath    0    //XCUIElementTypeApplication[@name="Rocket.Chat+"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeToolbar/XCUIElementTypeTextView    hello
@@ -34,7 +35,7 @@ iOS_thread
 Android_thread
     sleep    10s
     click_element_by_id    1    chat.rocket.android:id/btn_connect
-    sleep    30s
+    sleep    20s
     input_text_by_id    1    chat.rocket.android:id/editor_username    acetestingB
     input_text_by_id    1    chat.rocket.android:id/editor_passwd    acetest1234
     click_element_by_id    1    chat.rocket.android:id/btn_login_with_email
