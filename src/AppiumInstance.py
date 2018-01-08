@@ -67,13 +67,15 @@ class appiumInstance():
             desired_caps['platformVersion'] = self.platformVersion
             desired_caps['deviceName'] = self.deviceName
             #desired_caps['useNewWDA'] = "true"
-            desired_caps['showXcodeLog'] = "true"
-            desired_caps['resetOnSessionStartOnly'] = "false"
-            desired_caps['newCommandTimeout']= 60
+            #desired_caps['showXcodeLog'] = "true"
+            desired_caps['resetOnSessionStartOnly'] = "true"
+            desired_caps['newCommandTimeout']= 120
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
             if(self.bundleId!=None):
                 desired_caps['bundleId'] = self.bundleId
+                desired_caps['useNewWDA'] = "true"
+                desired_caps['showXcodeLog'] = "true"
             if(self.packageName != None):
                 desired_caps['appPackage'] = self.packageName
             if(self.activityName != None):
@@ -81,6 +83,7 @@ class appiumInstance():
             if(self.xcodeOrgId != None):
                 desired_caps['xcodeOrgId'] = self.xcodeOrgId
                 desired_caps['startIWDP'] = "true"
+                desired_caps['automationName'] = "XCUITest"
             if(self.xcodeSigningId != None):
                 desired_caps['xcodeSigningId'] = self.xcodeSigningId
             self.driver = webdriver.Remote("http://127.0.0.1:" + self.appiumPort + "/wd/hub", desired_caps)

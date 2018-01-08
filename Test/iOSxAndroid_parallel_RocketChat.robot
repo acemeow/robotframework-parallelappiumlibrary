@@ -46,7 +46,7 @@ Android_thread
     click_element_by_id    1    chat.rocket.android:id/button_send
 
 keywords_test_teardown
-    stopAppiumServers
+    comment    stopAppiumServers
 
 
 
