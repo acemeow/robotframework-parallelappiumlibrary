@@ -20,7 +20,7 @@ class appiumInstance():
     #for iOS
     bundleId = packageName
     xcodeOrgId = None
-    xcodeSigningId = "iPhone developer"
+    xcodeSigningId = "iPhone Developer"
 
 
     IPAddress = "127.0.0.1"
@@ -69,12 +69,12 @@ class appiumInstance():
             #desired_caps['useNewWDA'] = "true"
             #desired_caps['showXcodeLog'] = "true"
             desired_caps['resetOnSessionStartOnly'] = "true"
-            desired_caps['newCommandTimeout']= 120
+            desired_caps['newCommandTimeout']= 180
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
             if(self.bundleId!=None):
                 desired_caps['bundleId'] = self.bundleId
-                desired_caps['useNewWDA'] = "true"
+                desired_caps['useNewWDA'] = "false"
                 desired_caps['showXcodeLog'] = "true"
             if(self.packageName != None):
                 desired_caps['appPackage'] = self.packageName

@@ -38,7 +38,7 @@ class ParalleAppiumLib():
             self.threadList[i].start()
         j = int(0)
         while self.serverList[j] == None and j < self.serverCount:
-            time.sleep(1)
+            time.sleep(2)
             if self.serverList[j] != None:
                 j += 1
 
