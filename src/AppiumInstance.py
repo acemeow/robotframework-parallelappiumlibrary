@@ -5,6 +5,7 @@ from subprocess import call
 from selenium.webdriver.common.by import By
 #from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from appium.webdriver.common.touch_action import TouchAction
 from time import sleep
 from selenium.webdriver.support.wait import WebDriverWait
 import os, re, logging, subprocess, threading, socket, time, sys, thread
@@ -181,7 +182,9 @@ class appiumInstance():
         self.driver.find_element_by_name(name)
 
     def _tap_coordinate(self, x, y, duration):
-        self.driver.tap([x, y], duration)
+        #self.driver.tap([x, y], duration)
+        TouchAction(self.driver).tap(None, x, y, 1).perform()
+        #TouchAction(self.driver).tap(x, y).perform()
 
     def _swipe(self, x1, y1, x2, y2, duration):
         self.driver.swipe(x1, y1, x2, y2, duration)

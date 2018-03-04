@@ -7,6 +7,7 @@ Suite Teardown  keywords_test_teardown
 *** Test Cases ***
 
 login
+
     ${thread1}=    Run Keyword Async    iOS_thread
     ${thread2}=    Run Keyword Async    Android_thread
     ${END}=    Wait Async All    300
@@ -45,20 +46,29 @@ Android_thread
     input_text_by_id    1    co.chatsdk.android.app:id/chat_sdk_et_username    acetesting.b@gmail.com
     input_text_by_id    1    co.chatsdk.android.app:id/chat_sdk_et_password    acetest1234
     click_element_by_id    1    co.chatsdk.android.app:id/chat_sdk_btn_login
-    comment    click_element_by_id    1    co.chatsdk.android.app:id/linear
-    click_element_by_xpath    1    /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout[2]/android.widget.RelativeLayout/android.support.v4.view.ViewPager/android.widget.RelativeLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.LinearLayout[1]
     sleep   10s
+
+    click_element_by_id    1    co.chatsdk.android.app:id/img_thread_image
+
+    sleep   5s
     input_text_by_id    1    co.chatsdk.android.app:id/chat_sdk_et_message_to_send    hi
     click_element_by_id    1    co.chatsdk.android.app:id/chat_sdk_btn_chat_send_message
 
     click_element_by_accessibility_id    1    Message option button
     click_element_by_xpath    1    /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.TextView[1]
-    click_element_by_id    1    com.google.android.gms:id/select_marker_location
+    sleep   5s
+    comment    click_element_by_id    1    com.google.android.gms:id/select_marker_location
+    click_element_by_xpath    1    /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.view.View/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]
+    sleep   5s
     click_element_by_id    1    com.google.android.gms:id/confirm_button
+
+    wait_until_page_contains_xpath    1    /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout/android.view.View/android.support.v7.widget.RecyclerView/android.widget.RelativeLayout[5]
 
     click_element_by_accessibility_id    1    Message option button
     click_element_by_xpath    1    /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.ListView/android.widget.TextView[3]
-    tap_coordinate    1    650    950    3
+    sleep   5s
+    tap_coordinate    1    670    960    10
+    sleep   5s
     click_element_by_id    1    co.chatsdk.android.app:id/btn_done
 
 
