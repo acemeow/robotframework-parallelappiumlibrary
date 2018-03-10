@@ -51,7 +51,8 @@ class ParalleAppiumLib():
     def stopAppiumServers(self):
         for k in range(int(self.serverCount)):
             self.serverList[k].stopInstance()
-            self.threadList[k].join()
+            #self.threadList[k].join()
+        os.system("killall node")
 
     def setServerCount(self, count):
         self.serverCount = int(count)

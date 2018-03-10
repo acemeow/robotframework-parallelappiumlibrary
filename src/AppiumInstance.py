@@ -70,13 +70,15 @@ class appiumInstance():
             #desired_caps['useNewWDA'] = "true"
             #desired_caps['showXcodeLog'] = "true"
             desired_caps['resetOnSessionStartOnly'] = "true"
-            desired_caps['newCommandTimeout']= 180
+            desired_caps['newCommandTimeout']= 300
             if(self.browserName!=None):
                 desired_caps['browserName'] = self.browserName
             if(self.bundleId!=None):
                 desired_caps['bundleId'] = self.bundleId
-                desired_caps['useNewWDA'] = "false"
+                desired_caps['useNewWDA'] = "true"
+                #desired_caps['updatedWDABundleId'] = "com.Acetesting.WDA"
                 desired_caps['showXcodeLog'] = "true"
+                desired_caps['clearSystemFiles'] = "true"
             if(self.packageName != None):
                 desired_caps['appPackage'] = self.packageName
             if(self.activityName != None):
@@ -93,9 +95,10 @@ class appiumInstance():
 
     def stopInstance(self):
         self.driver.quit()
-        os.system("killall node")
-
+        #self.closeApp()
+        #os.system("killall node")
         return
+
 
     def getFreePort(self):
         s = socket.socket()
@@ -141,6 +144,7 @@ class appiumInstance():
         self.xcodeSigningId = xcodeSigningID
 
     def stopAppiumServers(self):
+        #self.driver.close_app()
         self.driver.quit()
         return
 
