@@ -16,8 +16,8 @@ login
 *** Keywords ***
 keywords_test_setup
     setServerCount    2
-    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4023    4024    iOS    10.3.3    Safari    SSJ3AAN8C8
-    addInstance    EP7337JFDK    4025    4026    Android    4.3    chrome
+    addInstance    607dd2124bfe2b5f95929539bf41e68265009de7    4020    4021    iOS    10.3.3    None    None    Safari    SSJ3AAN8C8
+    addInstance    EP7337JFDK    4030    4031    Android    4.3    None    None    chrome
     startServers    true
 
 iOS_thread
@@ -35,14 +35,16 @@ Android_thread
     sleep    10s
     goToURL    1    https://www.google.com/gmail/
     sleep    5s
-    input_text_by_id    1    identifierId    acetesting.b
+    comment    input_text_by_accessibility_id    1    identifier    acetesting.b
+    comment    input_text_by_id    1    identifierId    acetesting.b
+    input_text_by_xpath    1    //*[@id='identifierId']    acetesting.b
     click_element_by_xpath    1    //*[@id='identifierNext']/content/span
     sleep    5s
     input_text_by_xpath    1    //*[@id='password']/div[1]/div/div[1]/input   acetest1234
     sleep    5s
     click_element_by_xpath    1    //*[@id='passwordNext']/content/span
     sleep    5s
-    click_element_by_xpath    0    //*[@id='tltbt']/div[4]/div
+    click_element_by_xpath    1    //*[@id='tltbt']/div[4]/div
     sleep    5s
     input_text_by_xpath    1    //*[@id='composeto']    acetesting.a@gmail.com
     input_text_by_xpath    1    //*[@id='cmcsubj']    testmail

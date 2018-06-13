@@ -128,4 +128,31 @@ class ParalleAppiumLib():
 
     def goToURL(self, num, URL):
         self.serverList[int(num)]._goToURL(URL)
+
+##########ASSERTS
+
+    def asserts_page_contains_accessibility_id(self, num, id, timeout=30):
+        self.serverList[int(num)]._wait_until_page_contains_accessibility_id(id, timeout)
+
+    def asserts_page_contains_id(self, num, id, timeout=30):
+        self.serverList[int(num)]._wait_until_page_contains_id(id, timeout)
+
+    def asserts_page_contains_xpath(self, num, xpath, timeout=30):
+        self.serverList[int(num)]._wait_until_page_contains_xpath(xpath, timeout)
+
+    def asserts_page_contains_class_name(self, num, className, timeout=30):
+        self.serverList[int(num)]._wait_until_page_contains_class_name(className, timeout)
+
+    def asserts_page_contains_name(self, num, name, timeout=30):
+        self.serverList[int(num)]._wait_until_page_contains_name(name, timeout)
+
+##########OTHERS
+
+
+    def hide_keyboard(self, num):
+        self.serverList[int(num)]._hide_keyboard()
+
+    def back(self, num):
+        self.serverList[int(num)]._back()
+
 # ios_webkit_debug_proxy -c 607dd2124bfe2b5f95929539bf41e68265009de7:27753 -d

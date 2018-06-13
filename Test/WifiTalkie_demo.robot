@@ -209,3 +209,27 @@ SendFile_HQ51FYL18100
     Click Element    0    id=com.remaller.android.wifitalkie_lite:id/button_messages
     Wait Until Page Contains Element    0    id=com.remaller.android.wifitalkie_lite:id/declineButton    10
     Click Element    0    id=com.remaller.android.wifitalkie_lite:id/declineButton
+
+finds
+    sleep    3s
+    Comment    find_element_by_accessibility_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    find_element_by_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    find_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]
+    find_element_by_id    0    com.remaller.android.wifitalkie_lite:id/deviceName
+    find_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+
+click_and_taps
+    sleep    3s
+    Comment    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/acceptCheckBox
+    Comment    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/submitButton
+    click_element_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[2]//*[1]//*[1]//*[1]//*[1]//*[2]
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/button_messages
+    Comment    tap_coordinate    0    150    500    500
+    Comment    click_element_by_accessibility_id    0    com.remaller.android.wifitalkie_lite:id/button_messages
+
+text_input
+    sleep    3s
+    input_text_by_id    0    com.remaller.android.wifitalkie_lite:id/messageEditText    hello
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
+    input_text_by_xpath    0    //*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[1]//*[3]    123
+    click_element_by_id    0    com.remaller.android.wifitalkie_lite:id/sendMessageButton
